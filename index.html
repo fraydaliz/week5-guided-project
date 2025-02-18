@@ -1,33 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="reset.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="nav">
+        <ul class="flex">
           <li><a href=""></a>Home</li>
           <li><a href=""></a>Products</li>
-          <li><a href=""></a>Cathegories</li>
+          <li><a href=""></a>Categories</li>
           <li><a href=""></a>Login</li>
         </ul>
       </nav>
     </header>
+
+    <!--hero section-->
+    <div class="container">
+      <main class="main">
+        <div class="hero hero-image">
+          <h1 class="h1">Welcome To Our Website!</h1>
+          <a href="#more">Learn More</a>
+        </div>
+        <div></div>
+      </main>
+    </div>
     <!--hero section-->
     <section>
-        <h1></h1>
-        <p></p>
-        <button>learn More</button>
+      <h1 id="more" class="padding">Our Mission</h1>
+      <div>
+        <p class="padding">
+          Our mission is to empower individuals and communities by providing<br>
+          innovative solutions that enhance everyday life. We are<br>
+          committed to delivering high-quality products and services<br>
+          that meet the evolving needs of our customers. Through our dedication<br>
+          to excellence, sustainability, and social responsibility, we<br>
+          strive to make a positive impact on the world and inspire others to do<br>
+          the same
+        </p>
+
+        <div>
+          <h2 class="margin padding">About Us</h2>
+          <p class="padding">
+            we are passionate about creating exceptional experiences for our<br>
+            customers. Founded on the principles of innovation, quality, and<br>
+            customer satisfaction, we have grown into a trusted name in the<br>
+            industry. Our dedicated team works tirelessly to bring you the best<br>
+            products and services, always striving to exceed your expectations.<br>
+            We believe in building lasting relationships with our customers,<br>
+            partners, and communities, and we are committed to making a positive<br>
+            impact in everything we do. Join us on our journey to make the world<br>
+            a better place, one step at a time.<br>
+          </p>
+        </div>
+      </div>
     </section>
-     <!--hero section-->
-    <section>
-        <h2></h2>
-        <p></p>
-        <p></p>
+
+    <section aria-labelledby="contact-form">
+      <h1 class="margin-form padding font">Have a question?</h1>
+      <p class="padding">
+        We're here to help! Whether you need more information about our
+        products, <br />
+        have a question about your order, or just want to say hello, feel free
+        to reach out.<br />
+        Our friendly customer support team is available to assist you with any
+        inquiries you may have. <br />Simply fill out the form below, and we'll
+        get back to you as soon as possible.<br />
+        We look forward to hearing from you!
+      </p>
+      <form id="contact-form">
+        <fieldset>
+          <legend>Message Us</legend>
+          <label for="name"
+            >Name:
+            <input 
+            placeholder="Enter your name" required autofocus type="text" aria-describedby="enter-name" />
+          </label>
+          <small id="enter-name">Please enter name</small>
+          <label for="email"
+            >Email:
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autofocus
+              required
+              aria-describedby="enter-email"
+              placeholder="Enter your email"
+            />
+          </label>
+          <small id="enter-email">please enter your email</small>
+          <label for="text">
+            Message:
+            <textarea
+              aria-labelledby="Message-help"
+              rows=""
+              required
+              autofocus
+              placeholder="Type Message"
+              name="Message"
+              id="Message"
+            ></textarea>
+          </label>
+          <small id="type Message">enter your massage</small>
+          <button>Summit</button>
+        </fieldset>
+      </form>
     </section>
-    <footer></footer>
+    <footer class="footer container">
+      <p>&copy;2025 Fraydaliz Carpio | All Rights Reserved</p>
+    </footer>
   </body>
 </html>
